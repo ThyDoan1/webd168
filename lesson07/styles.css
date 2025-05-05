@@ -99,6 +99,7 @@ header {
   /* Inner padding */
   width: 50%;
   /* Half-page width */
+  align-items: center;
 }
 
 /* Header title (h1) styles */
@@ -250,7 +251,6 @@ footer {
     z-index: 500;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   /* Smaller header title */
