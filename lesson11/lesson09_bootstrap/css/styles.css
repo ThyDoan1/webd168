@@ -1,0 +1,35 @@
+body {
+  background-color: #fefae0;
+  color: #2c3639;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 576px) {
+  body {
+    margin-left: 10px;
+  }
+}
+
+header h1 {
+  color: #2d4059;
+}
+
+@media (max-width: 576px) {
+  .col-md-6 {
+    margin-bottom: 8px;
+  }
+}
+
+.list-group-item {
+  background-color: #d7c0ae;
+  border-radius: 20px;
+  margin: 2px;
+}
+
+#profilePicture {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#profilePicture:hover {
+  opacity: 1;
+}/*# sourceMappingURL=styles.css.map */
