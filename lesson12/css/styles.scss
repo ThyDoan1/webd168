@@ -1,0 +1,47 @@
+$colors: (
+  primary: #fefae0,
+  font-color: #2c3639,
+  h1-color: #2d4059,
+  accent: #d7c0ae,
+);
+
+$margin: 10px;
+$font-main: "Montserrat", sans-serif;
+$mobile: 576px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body {
+  background-color: color(primary);
+  color: color(font-color);
+  font-family: $font-main;
+
+  @include mobile {
+    margin-left: $margin;
+  }
+}
+
+header {
+  h1 {
+    color: color(h1-color);
+  }
+}
+.col-md-6 {
+  @include mobile {
+    margin-bottom: 8px;
+  }
+}
+
+.list-group-item {
+  background-color: color(accent);
+  border-radius: 20px;
+  margin: 2px;
+}
