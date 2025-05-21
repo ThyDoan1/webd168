@@ -1,5 +1,6 @@
 /**mobile*/
 img {
+  width: 250px;
   margin: auto;
   float: top;
   shape-outside: polygon(75% 0, 104% 74%, 1% 110%, 0 49%);
