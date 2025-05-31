@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Thy Doan's Portfolio</title>
+  </head>
+  <!--Body-->
+  <body id="page-top">
+    <div class="container mx-auto mt-4 px-4 max-w-screen-lg">
+      <!--Nav-->
+      <nav class="bg-gray-800 p-4 sticky top-0 z-50">
+        <div
+          class="container mx-auto flex justify-between items-center flex-wrap"
+        >
+          <a href="#page-top" class="text-white text-lg font-semibold"
+            >Thy Doan</a
+          >
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger"
+            class="text-gray-300 hover:text-white focus:outline-none md:hidden"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Navigation Links-->
+          <div
+            id="nav-links"
+            class="hidden w-full md:flex md:items-center md:w-auto"
+          >
+            <a
+              href="#aboutMe"
+              class="block mt-4 md:inline-block md:mt-0 text-gray-300 hover:text-white px-3 py-2"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="block mt-4 md:inline-block md:mt-0 text-gray-300 hover:text-white px-3 py-2"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="block mt-4 md:inline-block md:mt-0 text-gray-300 hover:text-white px-3 py-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!--Header include a picture of me, my name, and my title-->
+      <header class="text-center mt-6 mb-6">
+        <h1 class="text-2xl font-bold">Thy Doan - Software Engineer</h1>
+        <img
+          src="ThysPicture.jpg"
+          id="profilePicture"
+          alt="picture of Thy Doan"
+          class="max-w-full h-auto rounded-full mt-4 mx-auto"
+          style="max-width: 200px"
+        />
+      </header>
+      <!--Main include an introduction about me, my skills, and my Hobbies-->
+      <main>
+        <!--Introduction about me-->
+        <section class="mb-6" id="aboutMe">
+          <h2 class="text-2xl font-semibold mb-3">About me</h2>
+          <p>
+            I'm a Computer Science student who is passionate about the
+            technology world. I've been taking classes at San Diego Mesa College
+            in order to transfer to an university. Recently, I just got accepted
+            into San Diego State University, which I'm very happy, and I want to
+            share the news with you. It's my dream to become a Software Engineer
+            in the future, so getting a Bachelor degree would help me achieve my
+            goal.
+          </p>
+        </section>
+
+        <section class="mb-6" id="skills">
+          <h2 class="text-2xl font-semibold mb-3">Skills</h2>
+          <p class="mb-4">
+            Over the last few years, I've gained many helpful skills, both
+            coding skills and soft skills, by taking in-person classes, online
+            courses, and self-taught during my free time. I enjoy learning new
+            coding skills, basic coding fundamental concepts, and love to see
+            how my skills is growing. The learning process might be overwhelming
+            sometimes, but I love the feeling whenever I overcome a difficult
+            challenge.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Coding Languages</h3>
+              <ul>
+                <li class="py-2 border-b border-gray-200">Java</li>
+                <li class="py-2 border-b border-gray-200">Python</li>
+                <li class="py-2 border-b border-gray-200">C, C++</li>
+                <li class="py-2 border-b border-gray-200">
+                  Html, Css, JavaScript, React
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Soft skills</h3>
+              <ul>
+                <li class="py-2 border-b border-gray-200">
+                  Team Resource Management
+                </li>
+                <li class="py-2 border-b border-gray-200">Customer Services</li>
+                <li class="py-2 border-b border-gray-200">Safety Adherence</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-6" id="contact">
+          <!-- Contact Form -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-3">Contact Me</h2>
+            <form
+              action="#"
+              method="POST"
+              class="bg-white p-6 rounded-lg shadow-md"
+            >
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Name:</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Email:</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  >Message:</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
+                  required
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-between">
+                <button
+                  type="submit"
+                  class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      // JavaScript to toggle the mobile menu
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+      const navLinkItems = navLinks.querySelectorAll("a"); // Get all anchor tags within nav-links
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+      });
+
+      // Add event listener to each navigation link
+      navLinkItems.forEach((link) => {
+        link.addEventListener("click", () => {
+          // Check if the nav links are currently visible (not hidden)
+          if (!navLinks.classList.contains("hidden")) {
+            navLinks.classList.add("hidden"); // Hide the nav links
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
