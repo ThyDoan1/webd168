@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Thy Doan's Portfolio</title>
+  </head>
+  <!--Body-->
+  <body id="page-top" class="bg-amber-50">
+    <div class="container mx-auto mt-4 px-4 sm:px-12 max-w-screen-lg">
+      <!--Nav-->
+      <nav class="bg-orange-300 p-4 sticky top-0 z-50">
+        <div
+          class="container mx-auto flex justify-between items-center flex-wrap"
+        >
+          <a
+            href="#page-top"
+            class="text-gray-600 hover:text-white text-lg font-semibold"
+            >Thy Doan</a
+          >
+
+          <!-- Hamburger Button -->
+          <button
+            id="hamburger"
+            class="text-gray-600 hover:text-white focus:outline-none md:hidden cursor-pointer"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Navigation Links-->
+          <div
+            id="nav-links"
+            class="hidden w-full md:flex md:items-center md:w-auto"
+          >
+            <a
+              href="#aboutMe"
+              class="block mt-4 md:inline-block md:mt-0 text-gray-600 hover:text-white px-3 py-2"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="block mt-4 md:inline-block md:mt-0 text-gray-600 hover:text-white px-3 py-2"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="block mt-4 md:inline-block md:mt-0 text-gray-600 hover:text-white px-3 py-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!--Header include a picture of me, my name, and my title-->
+      <header class="text-center mt-6 mb-6">
+        <h1 class="text-3xl md:text-5xl font-bold text-sky-600">Welcome</h1>
+        <img
+          src="images/Thys-picture.jpg"
+          id="profilePicture"
+          alt="picture of Thy Doan"
+          class="max-w-full h-auto rounded-full mt-4 mx-auto opacity-90 hover:opacity-100 trasnsition-ease-in-out duration-300 hover:shadow-xl"
+          style="max-width: 200px"
+        />
+        <h2 class="text-xl font-semibold mt-6 text-sky-900">
+          Thy Doan - Software Engineer
+        </h2>
+      </header>
+      <!--Main include an introduction about me, my skills, and my contact info-->
+      <main>
+        <!--Introduction about me-->
+        <section class="mb-6" id="aboutMe">
+          <h2 class="text-2xl font-semibold mb-3 text-sky-950">About me</h2>
+          <p>
+            Hi, my name is Thy Doan, and I'm a full-stack developer who have
+            been working with different brands to create clean, simple,
+            responsive and user-friendly websites. I love to bring my clients'
+            ideas to life and keep updated on new technologies to improve my
+            crafts.
+          </p>
+          <p>
+            With more than 5 years of experiences in school and work combined,
+            I've helped many clients with their ideas and visions. If you have
+            any ideas of a product or a website, you come to the right place. I
+            can help you!
+          </p>
+        </section>
+
+        <section class="mb-6" id="skills">
+          <h2 class="text-2xl font-semibold mb-3 text-sky-950">Skills</h2>
+          <p class="mb-4">
+            Over the last few years, I've gained many helpful skills, both
+            coding skills and soft skills, by taking in-person classes, online
+            courses, and self-taught during my free time. I enjoy learning new
+            coding skills, basic coding fundamental concepts, and love to see
+            how my skills is growing. The learning process might be overwhelming
+            sometimes, but I love the feeling whenever I overcome a difficult
+            challenge.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h3 class="text-xl font-semibold mb-2 text-center text-sky-900">
+                Coding Languages
+              </h3>
+              <ul>
+                <li class="py-2 border-b border-gray-200 text-center">Java</li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Python
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  C, C++
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  HTML, CSS, JavaScript
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2 text-center text-sky-900">
+                Frameworks
+              </h3>
+              <ul>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Bootstrap
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Tailwind CSS
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">React</li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Node.js
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2 text-center text-sky-900">
+                Soft skills
+              </h3>
+              <ul>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Collaboration
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Problem Solving
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Adaptability
+                </li>
+                <li class="py-2 border-b border-gray-200 text-center">
+                  Safety Adherence
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-6" id="contact">
+          <!-- Contact Form -->
+          <div>
+            <h2 class="text-2xl font-semibold mb-3 text-sky-950">Contact Me</h2>
+            <p>
+              If you are looking for a website designer, or a developer to bring
+              your idea to life, please feel free to contact me. I would love to
+              help you with your project! You can fill out the form below, and
+              I'll response to you as soon as I can. Expected response time is 2
+              business days. Thank you!
+            </p>
+            <form
+              class="w-full max-w-md md:max-w-2xl mx-auto mt-10 bg-cyan-300 rounded shadow-lg p-4"
+            >
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 md:text-s font-bold mb-3"
+                    for="first-name"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="first-name"
+                    type="text"
+                    placeholder="first name"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-s font-bold mb-3"
+                    for="last-name"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="last-name"
+                    type="text"
+                    placeholder="last name"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-2/3 px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-s font-bold mb-3"
+                    for="email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-100 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="email"
+                    type="email"
+                    placeholder="name@text.com"
+                  />
+                </div>
+              </div>
+              <div class="w-full md:w-2/3 px-3 -mx-3 mb-6 md:mb-0">
+                <label
+                  class="block uppercase tracking-wide text-gray-700 text-s font-bold mb-3"
+                  for="options"
+                >
+                  How can I help you?
+                </label>
+                <div class="relative">
+                  <select
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                    id="options"
+                  >
+                    <option>Make a website</option>
+                    <option>Design a logo</option>
+                    <option>Fix bugs</option>
+                  </select>
+                </div>
+                <div class="w-full md:w-2/3 px-3 -mx-3 mb-6"></div>
+              </div>
+              <div class="w-full md:w-2/3 px-3 -mx-3 mb-6">
+                <label
+                  class="block uppercase tracking-wide text-gray-700 text-s font-bold mb-3"
+                  for="message"
+                >
+                  Message:
+                </label>
+                <textarea
+                  class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-2 mb-3 focus:outline-none focus:bg-white focus:border-gray-500"
+                  name="message"
+                  id="message"
+                  placeholder="I want to contact you about..."
+                  rows="3"
+                  maxlength="150"
+                >
+                </textarea>
+                <button
+                  type="submit"
+                  class="block uppercase font-bold text-md text-white bg-gray-700 hover:bg-gray-800 p-2 mt-6 rounded text-center"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!--Footer-->
+    <footer class="text-center mb-4">
+      <p>
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        <span class="lead">Thy Doan</span>
+      </p>
+    </footer>
+    <script src="scripts/my-scripts.js"></script>
+  </body>
+</html>

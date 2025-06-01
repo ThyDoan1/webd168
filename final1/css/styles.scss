@@ -1,0 +1,14 @@
+//import google fonts for Roboto
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+$font-main: "Roboto", sans-serif;
+
+// set the scroll padding top to 5rem to ensure the content is always visible on the page
+html {
+  scroll-padding-top: 5rem;
+}
+
+//Set the body font-family to Roboto
+body {
+  font-family: $font-main;
+}
